@@ -3,7 +3,7 @@
   <head>
     <title>Linda O'Neill</title>
     <%= csrf_meta_tags %>
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -12,16 +12,40 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Linda O'Neill</a>
+          <a class="navbar-brand"><%= link_to "Linda O'Neill", root_path %></a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><%= link_to "About", about_path %></li>
+          <li><%= link_to "Work", work_path %></li>
+          <li><%= link_to "Contact", contact_path %></li>
         </ul>
       </div>
     </nav>
+    <main>
+    </main>
+
+    <footer class="page-footer font-small special-color-dark pt-4 navbar-fixed-bottom">
+        <div class="container">
+          <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/in/linda-oneill-1129b911b" target="blank">
+                <i class="fa fa-linkedin"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-github mx-1" href="https://github.com/Loneill29" target="blank">
+                <i class="fa fa-github"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-envelope-square mx-1" href="mailto:oneill.linda21@gmail.com" target="blank">
+                <i class="fa fa-envelope-square"> </i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+
     <%= yield %>
   </body>
 </html>
