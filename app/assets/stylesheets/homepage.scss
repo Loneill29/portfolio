@@ -1,3 +1,29 @@
 // Place all the styles related to the homepage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.container-homepage {
+  display: flex;
+  height: 500px;
+}
+.headshot {
+  background-color: #81F0E5;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+.headshot img {
+  border-radius: 50%;
+}
+.my-info {
+  background-color: white;
+  color: #6E9075;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding-top: 140px;
+}
+.name {
+  font-family: 'Sacramento', cursive;
+  font-size: 80px;
+}

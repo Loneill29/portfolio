@@ -4,7 +4,8 @@
     <title>Linda O'Neill</title>
     <%= csrf_meta_tags %>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <%= stylesheet_link_tag    'application', :media => 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <%= stylesheet_link_tag 'application', :media => 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -25,6 +26,7 @@
     <main>
     </main>
 
+    <div class="container-footer">
     <footer class="page-footer font-small special-color-dark pt-4 navbar-fixed-bottom">
         <div class="container">
           <ul class="list-unstyled list-inline text-center">
@@ -46,6 +48,7 @@
           </ul>
         </div>
       </footer>
+     </div>
 
     <%= yield %>
   </body>

@@ -12,17 +12,21 @@
  *
 
  */
+ /*
+ *= require_tree .
+ *= require_self
+ */
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
-
-
- .name {
-   display: block;
+ .container-footer {
+   display: flex;
+   height: 100%;
  }
- .email {
-   display: block;
- }
- .textarea {
-   display: block;
+.container-navbar {
+  display: flex;
+  height: 100%;
+}
+.navbar-right {
+   color: #6E9075;
  }
