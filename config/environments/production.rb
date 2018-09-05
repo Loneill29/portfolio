@@ -64,7 +64,9 @@ Rails.application.configure do
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
-  # config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default_url_options = { :host => 'https://guarded-island-61612.herokuapp.com' }
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_deliveries = true
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
@@ -85,6 +87,21 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
+
+  config.action_mailer.smtp_settings = {
+  :port                 => ENV['SMTP_PORT'],
+  :address              => ENV['SMTP_SERVER'],
+  :user_name            => ENV['SMTP_LOGIN'].presence,
+  :password             => ENV['SMTP_PASSWORD'].presence,
+  :domain               => ENV['SMTP_DOMAIN'] || ENV['LOCAL_DOMAIN'],
+  :authentication       => ENV['SMTP_AUTH_METHOD'] == 'none' ? nil : ENV['SMTP_AUTH_METHOD'] || :plain,
+  :ca_file              => ENV['SMTP_CA_FILE'].presence,
+  :openssl_verify_mode  => ENV['SMTP_OPENSSL_VERIFY_MODE'],
+  :enable_starttls_auto => ENV['SMTP_ENABLE_STARTTLS_AUTO'] || true,
+  :tls                  => ENV['SMTP_TLS'].presence,
+}
+
+config.action_mailer.delivery_method = ENV.fetch('SMTP_DELIVERY_METHOD', 'smtp').to_sym
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
