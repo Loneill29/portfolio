@@ -17,3 +17,12 @@
 //= require bootstrap-sprockets
 //= require jquery
 //= require jquery_ujs
+$(function() {
+
+  $(".menu-link").click(function(e) {
+    e.preventDefault();
+    $(".menu-overlay").toggleClass("open");
+    $(".menu").toggleClass("open");
+  });
+
+});
