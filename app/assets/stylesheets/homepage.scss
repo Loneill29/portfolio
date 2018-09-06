@@ -6,11 +6,9 @@
   height: 500px;
   background-color: #81F0E5;
 }
-
-
-.name {
-  margin: auto;
-  font-size: 300px;
-  color: white;
-  padding-left: 100px;
+img {
+  display: table-cell;
+  padding-top: 150px;
+  text-align: center;
+  vertical-align: middle;
 }

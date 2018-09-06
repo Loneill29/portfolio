@@ -28,6 +28,7 @@
    margin: 0;
    padding: 0;
    overflow: hidden;
+   background-color: #81F0E5;
  }
 
  .menu {
@@ -134,8 +135,17 @@
  .menu.open .menu-line-3 {
   transform: translateY(-7px) translateY(50%) rotate(135deg);
  }
-
  .container-footer {
    display: flex;
    height: 100%;
+   background-color: #81F0E5;
+ }
+ .page-footer {
+   background-color: #81F0E5;
+ }
+ .list-inline-item {
+   background-color: #81F0E5;
+ }
+ .btn-floating {
+   color: white;
  }
