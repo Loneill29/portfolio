@@ -24,5 +24,4 @@ $(function() {
     $(".menu-overlay").toggleClass("open");
     $(".menu").toggleClass("open");
   });
-
 });

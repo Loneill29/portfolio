@@ -19,3 +19,25 @@
   transform: scale(1.4);
   transition: all 0.2s ease-in-out
 }
+
+.menu {
+  padding-left: 380px;
+  padding-top: 180px;
+}
+
+.menu-circle {
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+.menu-line-1 {
+  visibility: hidden;
+}
+
+.menu-line-2 {
+  visibility: hidden;
+}
+
+.menu-line-3 {
+  visibility: hidden;
+}
