@@ -1,7 +1,14 @@
-<div class="container-home">
-<div class="center-block">
-  <div class="logo">
-      <img src="/assets/logo_Lcaps.jpg" alt="logo"/>
-  </div>
-</div>
+<nav class="home-menu">
+  <span class="home-menu-circle"></span>
+  <a href="#" class="home-menu-link">
+    <div class="logo">
+        <img src="/assets/logo_Lcaps.jpg" alt="logo"/>
+    </div>
+    </span>
+  </a>
+</nav>
+<div class="home-menu-overlay">
+      <a><%= link_to "About", about_path %></a>
+      <a><%= link_to "Portfolio", projects_path %></a>
+      <a><%= link_to "Contact", new_message_path %></a>
 </div>

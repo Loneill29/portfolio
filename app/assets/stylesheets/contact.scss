@@ -5,11 +5,37 @@
   font-family: 'Sacramento', cursive;
   font-size: 80px;
   color: #ffff;
-  margin-top: 50px;
   text-align: center;
+  margin-top: 50px;
 }
 
 .form {
-  margin-top: 100px;
-  display: block;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.name {
+  padding-top: 10px;
+  padding-right: 10px;
+  display: inline;
+  border-radius: 10px;
+}
+
+.email {
+  padding-top: 10px;
+  padding-left: 10px;
+  display: inline;
+  border-radius: 10px;
+}
+
+.message {
+  padding-top: 10px;
+  border-radius: 10px;
+
+}
+
+.btn {
+  background-color: #6E9075;
+  color: #ffff;
+  margin-top: 5px;
 }
