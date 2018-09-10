@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .container-about {
   display: flex;
-  height: 500px;
+  height: 600px;
 }
 .headshot {
   background-color: #81F0E5;
@@ -26,4 +26,17 @@
 .full-name {
   font-family: 'Sacramento', cursive;
   font-size: 80px;
+  margin-bottom: -20px;
+}
+
+.about-me {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: justify;
+  }
+
+.headline {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
 }

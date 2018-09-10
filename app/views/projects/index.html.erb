@@ -1,9 +1,17 @@
-<h1 id="portfolio-title">Projects</h1>
+<div class="container-projects">
+<header>
+  <h1 id="portfolio-title">Projects</h1>
+</header>
+<br>
 
-<div id="posts-wrapper" class="skinny-wrapper">
+<div class="card projects" style="width: 18rem;">
+  <img class="card-img-top" src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="Card image cap">
+  <div class="card-body">
   <% @projects.each do |project| %>
-    <div class="post">
-      <h2><a href="#"><%= link_to project.title, project %></h2>
+    <h1 class="card-title">
+      <a href="#"><%= link_to project.title, project %></a>
+    </h1>
     </div>
   <% end %>
+</div>
 </div>

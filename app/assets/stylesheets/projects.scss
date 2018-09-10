@@ -1,3 +1,27 @@
 // Place all the styles related to the projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.container-projects {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#portfolio-title {
+  align-self: center;
+  font-family: 'Sacramento', cursive;
+  font-size: 80px;
+  color: #ffff;
+}
+
+.projects {
+  background: #ffff;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+}
+
+.card {
+  margin-top: 150px;
+  text-align: center;
+}
