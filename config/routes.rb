@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
-  get 'work' => 'work#index'
-
   get 'about' => 'homepage#about'
 
+  resources :projects
+  
   get 'contact_me', to: 'messages#new', as: 'new_message'
   post 'contact_me', to: 'messages#create', as: 'create_message'
 

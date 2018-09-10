@@ -1,0 +1,15 @@
+<div id="project_show" class="skinny_wrapper wrapper_padding">
+  <header>
+    <h1><%= @project.title %></h1>
+    <hr>
+  </header>
+
+  <div id="description">
+    <%= @project.description %>
+
+    <a href="<%= @project.link %>" class="project_button" target="_blank">Visit <%= @project.title %>
+    </a>
+  </div>
+
+  <hr>
+</div>

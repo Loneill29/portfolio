@@ -1,0 +1,9 @@
+<h1 id="portfolio-title">Projects</h1>
+
+<div id="posts-wrapper" class="skinny-wrapper">
+  <% @projects.each do |project| %>
+    <div class="post">
+      <h2><a href="#"><%= link_to project.title, project %></h2>
+    </div>
+  <% end %>
+</div>
