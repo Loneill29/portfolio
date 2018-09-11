@@ -8,21 +8,30 @@
 }
 
 #portfolio-title {
-  align-self: center;
+  display: block;
   font-family: 'Sacramento', cursive;
   font-size: 80px;
   color: #ffff;
 }
 
 .projects {
-  background: #ffff;
-  padding-left: 60px;
-  padding-right: 60px;
-  text-align: center;
+  display: inline-block;
 }
 
 .card {
+  display:inline;
+  margin: 10px;
+
+}
+.card-body {
   background: #ffff;
-  margin-top: 150px;
   text-align: center;
+  width: 360px;
+  border-radius: 5%;
+  padding-bottom: 20px;
+}
+
+.card-img-top {
+  border-radius: 50%;
+  padding-top: 20px;
 }

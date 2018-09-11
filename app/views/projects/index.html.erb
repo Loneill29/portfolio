@@ -21,14 +21,25 @@
 </header>
 <br>
 
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
+<div class="projects">
+  <div class="row">
+    <% @projects.each_slice(1) do |project| %>
   <% @projects.each do |project| %>
-    <%= image_tag project.image  %>
-    <h1 class="card-title">
-      <a href="#"><%= link_to project.title, project %></a>
-    </h1>
-    </div>
-  <% end %>
+  <div class="col-sm-4">
+  <div class="card">
+    <div class="card-body">
+      <div class="card-img-top">
+        <%= image_tag project.image  %>
+      </div>
+      <h1 class="card-title">
+        <%= project.title %>
+      </h1>
+        <%= link_to "View Project", project, :class => "btn btn-primary" %>
+     </div>
+    <% end %>
+  </div>
+ </div>
+ <% end %>
+ </div>
 </div>
 </div>
