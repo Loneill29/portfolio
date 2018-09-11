@@ -135,16 +135,21 @@
  .menu.open .menu-line-3 {
   transform: translateY(-7px) translateY(50%) rotate(135deg);
  }
+
  .container-footer {
    display: flex;
    background-color: #20BDC3;
  }
+
  .page-footer {
+   padding-top: 10px;
    background-color: #20BDC3;
  }
+
  .list-inline-item {
    background-color: #20BDC3;
  }
+
  .btn-floating {
    color: white;
  }

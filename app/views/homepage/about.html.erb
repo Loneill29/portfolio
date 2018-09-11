@@ -1,3 +1,19 @@
+<nav class="menu">
+  <span class="menu-circle"></span>
+  <a href="#" class="menu-link">
+    <span class="menu-icon">
+      <span class="menu-line menu-line-1"></span>
+      <span class="menu-line menu-line-2"></span>
+      <span class="menu-line menu-line-3"></span>
+    </span>
+  </a>
+</nav>
+
+<div class="menu-overlay">
+    <a><%= link_to "About", about_path %></a>
+    <a><%= link_to "Portfolio", projects_path %></a>
+    <a><%= link_to "Contact", new_message_path %></a>
+</div>
 <div class="container-about">
 <div class="headshot">
     <img src="/assets/headshot_1.jpg" alt="headshot"/>
