@@ -1,9 +1,10 @@
 
 <div class="card show-project" style="width: 18rem;">
-  <img class="card-img-top" src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="Card image cap">
+
   <div class="card-body">
     <h1 class="card-title"><%= @project.title %></h1>
     <p class="card-text"><%= @project.description %></p>
+    <%= image_tag @project.image.thumb.url %>
     <a href="<%= @project.link %>" class="btn btn-primary" target="_blank">Visit <%= @project.title %>
     </a>
   </div>
