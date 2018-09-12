@@ -19,6 +19,40 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+ element.style {
+ }
+
+ html {
+     overflow: scroll;
+     -webkit-tap-highlight-color: transparent;
+ }
+ html {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+ html {
+     font-family: sans-serif;
+     line-height: 1.15;
+     -ms-text-size-adjust: 100%;
+     -webkit-text-size-adjust: 100%;
+ }
+ *, ::after, ::before {
+     -webkit-box-sizing: inherit;
+     box-sizing: inherit;
+ }
+
+ html {
+     display: block;
+ }
+ *, ::after, ::before {
+     -webkit-box-sizing: inherit;
+     box-sizing: inherit;
+ }
+ *, ::after, ::before {
+     -webkit-box-sizing: inherit;
+     box-sizing: inherit;
+ }
+
  html {
    margin: 0;
    padding: 0;
@@ -29,6 +63,16 @@
    padding: 0;
    overflow: hidden;
    background-color: #20BDC3;
+ }
+
+ body {
+   padding-top: 54px;
+ }
+
+ @media (min-width: 992px) {
+   body {
+     padding-top: 56px;
+   }
  }
 
  .menu {
@@ -94,7 +138,7 @@
  }
 
  .menu-line {
-  background-color: #333;
+  background-color: #467879;
   height: 2px;
   width: 100%;
   border-radius: 2px;

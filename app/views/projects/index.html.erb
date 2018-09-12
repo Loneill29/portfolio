@@ -15,31 +15,83 @@
     <a><%= link_to "Contact", new_message_path %></a>
 </div>
 
-<div class="container-projects">
-<header>
-  <h1 id="portfolio-title">Projects</h1>
-</header>
-<br>
+<body>
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">Portfolio</h1>
+</section>
 
-<div class="projects">
-  <div class="row">
-    <% @projects.each_slice(1) do |project| %>
-  <% @projects.each do |project| %>
-  <div class="col-sm-4">
-  <div class="card">
-    <div class="card-body">
-      <div class="card-img-top">
-        <%= image_tag project.image  %>
+<div class="album text-muted">
+  <div class="container">
+
+    <div class="row">
+      <div class="card">
+        <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+        <h3>Project Name</h3>
+        <p class="card-text">Project description text Project description text Project description text Project description text Project description text</p>
       </div>
-      <h1 class="card-title">
-        <%= project.title %>
-      </h1>
-        <%= link_to "View Project", project, :class => "btn btn-primary" %>
-     </div>
-    <% end %>
+      <div class="card">
+        <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+        <h3>Project Name</h3>
+        <p class="card-text">Project description text Project description text Project description text Project description text Project description text</p>
+      </div>
+      <div class="card">
+        <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+        <h3>Project Name</h3>
+        <p class="card-text">Project description text Project description text Project description text Project description text Project description text</p>
+      </div>
+
+      <div class="card">
+        <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+        <h3>Project Name</h3>
+        <p class="card-text">Project description text Project description text Project description text Project description text Project description text</p>
+      </div>
+      <div class="card">
+        <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+        <h3>Project Name</h3>
+        <p class="card-text">Project description text Project description text Project description text Project description text Project description text</p>
+      </div>
+      <div class="card">
+        <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+        <h3>Project Name</h3>
+        <p class="card-text">Project description text Project description text Project description text Project description text Project description text</p>
+      </div>
+
+      <div class="card">
+        <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+        <h3>Project Name</h3>
+        <p class="card-text">Project description text Project description text Project description text Project description text Project description text</p>
+      </div>
+      <div class="card">
+        <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+        <h3>Project Name</h3>
+        <p class="card-text">Project description text Project description text Project description text Project description text Project description text</p>
+      </div>
+      <div class="card">
+        <img data-src="holder.js/100px280/thumb" alt="Card image cap">
+        <h3>Project Name</h3>
+        <p class="card-text">Project description text Project description text Project description text Project description text Project description text</p>
+      </div>
+    </div>
+
   </div>
- </div>
- <% end %>
- </div>
 </div>
-</div>
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+    </p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="../../assets/js/vendor/holder.min.js"></script>
+<script>
+  $(function () {
+    Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
+  });
+</script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
