@@ -53,10 +53,11 @@
       </div>
       <div class="card">
         <img data-src="holder.js/100px280/thumb" alt="Card image cap">
-        <h3>Project Name</h3>
+        <% @projects.each do |project| %>
+        <a href="#"><%= link_to project.title, project %></a>
         <p class="card-text">Project description text Project description text Project description text Project description text Project description text</p>
       </div>
-
+<% end %>
       <div class="card">
         <img data-src="holder.js/100px280/thumb" alt="Card image cap">
         <h3>Project Name</h3>
